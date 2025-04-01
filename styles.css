@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+body {
+    background-color: black;
+    color: white;
+}
+code {
+    font-family: "Fira Mono", monospace;
+    font-size: 12pt;
+    font-style: normal;
+}
+.hyfetch {
+    display: flex; /* Use flexbox to align items side by side */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add some space between the logo and the text */
+}
+a:hover{
+    text-decoration: wavy underline;
+    text-decoration-color: aquamarine;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
