@@ -19,7 +19,7 @@ let text = {
     "packages": "1800 (pacman), 28 (flatpak-system), 9 (flatpak-user)",
     "shell": "bash 5.2.37",
     "display": "1920x1080 @ 60 Hz",
-    "deskenv": "KDE Plasma 6.3.4",
+    "deskenv": "KDE Plasma",
     "winmanager": "KWin (Wayland)",
     "terminal": "kitty 0.41.1",
     "termfont": "NotoSansMono-Regular (11pt)",
@@ -29,6 +29,15 @@ let text = {
     "swap": "16.00 GiB",
     "disk": "186.28 GiB / 216.94 GiB (86%) - ext4 ",
     "locale": "en_AU.UTF-8"
+}
+
+function getLinuxVersion() {
+    fetch("https://gitlab.archlinux.org/api/v4/projects/42594/repository/tags")
+        .then(response => response.json())
+        .then(data => {
+            let kernel = document.getElementById("kernel")
+            kernel.innerText = (" " + data[0].name);
+        });
 }
 
 window.onload = function () {
@@ -41,4 +50,5 @@ window.onload = function () {
         }
     }
     fetchIPAddress();
+    getLinuxVersion();
 };
