@@ -14,20 +14,22 @@ async function fetchIPAddress() {
 
 let text = {
     "os": "Arch Linux x86_64",
-    "model": "20FA001NAU (ThinkPad T460s)",
-    "kernel": "6.14.4-arch1-1",
-    "packages": "1800 (pacman), 28 (flatpak-system), 9 (flatpak-user)",
+    "model": "83LK (LOQ 15IAX9E)",
+    "kernel": "6.14.7-arch2-1",
+    "packages": "1643 (pacman), 19 (flatpak)",
     "shell": "bash 5.2.37",
-    "display": "1920x1080 @ 60 Hz",
+    "display": "1920x1080 @ 144 Hz in 16\"",
     "deskenv": "KDE Plasma",
     "winmanager": "KWin (Wayland)",
-    "terminal": "kitty 0.41.1",
+    "terminal": "kitty 0.42.1",
     "termfont": "NotoSansMono-Regular (11pt)",
-    "cpu": "Intel(R) Core(TM) i7-6600U (2) @ 3.40 GHz ",
-    "gpu": "Intel HD Graphics 520 @ 1.05 GHz [Integrated] ",
-    "memory": "7.61 GiB",
-    "swap": "16.00 GiB",
-    "disk": "186.28 GiB / 216.94 GiB (86%) - ext4 ",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450HX (12) @ 4.40 GHz",
+    "gpu-int": "Intel UHD Graphics @ 1.30 GHz [Integrated]",
+    "gpu-dis": "NVIDIA GeForce RTX 3050 6GB Laptop GPU [Discrete]",
+    "memory": "15.34 GiB",
+    "swap": "24.00 GiB",
+    "disk-root": "266.33 GiB / 342.39 GiB (78%) - ext4",
+    "disk-home": "58.19 GiB / 97.87 GiB (59%) - ext4",
     "locale": "en_AU.UTF-8"
 }
 
